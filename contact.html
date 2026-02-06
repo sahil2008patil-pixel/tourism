@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with TravelHub. Contact our travel experts for assistance and inquiries.">
+    <title>Contact Us - TravelHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">🌍 TravelHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="alt-bg" style="padding: 3rem 1rem;">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p style="font-size: 1.1rem; color: var(--text-color); margin-top: 1rem;">
+                We'd love to hear from you! Get in touch with our travel experts
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO CARDS -->
+    <section class="container" style="padding: 3rem 1rem;">
+        <div class="grid grid-3" style="margin-bottom: 3rem;">
+            <article class="reveal-item" style="padding: 2rem; background: var(--light-color); border-radius: 1rem; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📧</div>
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:info@travelhub.com" style="color: var(--primary-color); font-weight: 600;">info@travelhub.com</a>
+                </p>
+                <p>We'll respond within 24 hours</p>
+            </article>
+            <article class="reveal-item" style="padding: 2rem; background: var(--light-color); border-radius: 1rem; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📞</div>
+                <h3>Phone</h3>
+                <p>
+                    <a href="tel:+15551234567" style="color: var(--primary-color); font-weight: 600;">+1 (555) 123-4567</a>
+                </p>
+                <p>Available Monday to Friday, 9AM-6PM</p>
+            </article>
+            <article class="reveal-item" style="padding: 2rem; background: var(--light-color); border-radius: 1rem; text-align: center;">
+                <div style="font-size: 2.5rem; margin-bottom: 1rem;">📍</div>
+                <h3>Location</h3>
+                <p>123 Travel Street<br>Adventure City, AC 12345</p>
+                <p>Visit our office for in-person consultations</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM & MAP -->
+    <section class="alt-bg" style="padding: 3rem 1rem;">
+        <div class="container">
+            <div class="grid grid-2" style="gap: 3rem;">
+                <!-- CONTACT FORM -->
+                <div class="reveal-item">
+                    <h2>Send us a Message</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="Enter your email address"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                placeholder="What is this about?"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                placeholder="Tell us more about your inquiry..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary form-submit">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- MAP SECTION -->
+                <div class="reveal-item">
+                    <h2>Visit Our Office</h2>
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.1234567890!2d-74.0060!3d40.7128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e8c8e8e1%3A0x12345678!2s123%20Travel%20Street%20Adventure%20City!5e0!3m2!1sen!2sus!4v1234567890"
+                        width="100%"
+                        height="400"
+                        style="border: none; border-radius: 0.5rem; margin-top: 1rem;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div style="margin-top: 1.5rem; background: white; padding: 1.5rem; border-radius: 0.5rem;">
+                        <h4>Business Hours</h4>
+                        <ul style="list-style: none; margin-top: 0.5rem;">
+                            <li>📅 Monday - Friday: 9:00 AM - 6:00 PM</li>
+                            <li>📅 Saturday: 10:00 AM - 4:00 PM</li>
+                            <li>📅 Sunday: Closed</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="container" style="padding: 3rem 1rem;">
+        <div class="section-header">
+            <h2>Frequently Asked Questions</h2>
+            <p>Find answers to common questions about our services</p>
+        </div>
+        <div class="grid grid-2" style="margin-top: 2rem;">
+            <article class="reveal-item">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">How do I book a package?</h3>
+                <p>Browse our packages, select the one you like, click "Book Now", and our team will guide you through the booking process. You can also reach out to us directly for personalized assistance.</p>
+            </article>
+            <article class="reveal-item">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What payment methods do you accept?</h3>
+                <p>We accept all major credit cards, debit cards, bank transfers, and digital payment methods. A secure payment link will be provided during the booking process.</p>
+            </article>
+            <article class="reveal-item">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Can I customize my tour package?</h3>
+                <p>Absolutely! We offer customizable packages tailored to your preferences, budget, and travel dates. Contact us to discuss your specific requirements with our travel experts.</p>
+            </article>
+            <article class="reveal-item">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">What is your cancellation policy?</h3>
+                <p>Our cancellation policy varies by package. Generally, cancellations made 30 days before departure receive a full refund. Closer cancellations may incur penalties. See specific package terms for details.</p>
+            </article>
+            <article class="reveal-item">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">Is travel insurance included?</h3>
+                <p>Travel insurance is included in most of our premium packages. For economy packages, travel insurance can be added at a small additional cost during checkout.</p>
+            </article>
+            <article class="reveal-item">
+                <h3 style="color: var(--primary-color); margin-bottom: 0.5rem;">How far in advance should I book?</h3>
+                <p>We recommend booking at least 2-3 months in advance for better availability and rates. However, last-minute bookings are also available depending on package availability.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SIGNUP -->
+    <section class="alt-bg">
+        <div class="container" style="text-align: center; padding: 3rem 1rem;">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Get exclusive travel tips, destination guides, and special offers delivered to your inbox
+            </p>
+            <div style="max-width: 400px; margin: 0 auto; display: flex; gap: 0.5rem;">
+                <input 
+                    type="email" 
+                    placeholder="Enter your email address"
+                    style="flex: 1; padding: 0.75rem 1rem; border: 2px solid var(--border-color); border-radius: 0.5rem; font-size: 1rem;"
+                >
+                <button class="btn-primary" style="white-space: nowrap;">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🌍 TravelHub</h3>
+                    <p>Your gateway to unforgettable travel experiences around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📧 info@travelhub.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Travel Street, Adventure City, AC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <p>&copy; 2026 TravelHub. All rights reserved. | <a href="#privacy" style="color: var(--accent-color);">Privacy Policy</a> | <a href="#terms" style="color: var(--accent-color);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

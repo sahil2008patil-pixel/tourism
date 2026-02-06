@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the world's most beautiful destinations with our curated travel packages and guided tours.">
+    <meta name="keywords" content="travel, tourism, destinations, tour packages, vacation">
+    <title>TravelHub - Discover Your Next Adventure</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">🌍 TravelHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore the world's most beautiful destinations with our curated travel experiences</p>
+            <div class="hero-buttons">
+                <button class="btn-primary" onclick="scrollToSection('featured-packages')">Explore Now</button>
+                <button class="btn-secondary" onclick="window.location.href='destinations.html'">View Destinations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED PACKAGES SECTION -->
+    <section id="featured-packages" class="container">
+        <div class="section-header">
+            <h2>Featured Tour Packages</h2>
+            <p>Handpicked travel packages designed for unforgettable experiences</p>
+        </div>
+        <div id="featured-packages-grid" class="grid grid-3"></div>
+    </section>
+
+    <!-- POPULAR DESTINATIONS SECTION -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Popular Destinations</h2>
+                <p>Discover the most sought-after travel destinations from around the globe</p>
+            </div>
+            <div id="destinations-grid" class="grid grid-3"></div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="destinations.html" class="btn-primary">View All Destinations →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US SECTION -->
+    <section class="container">
+        <div class="section-header">
+            <h2>Why Choose TravelHub?</h2>
+            <p>Experience travel like never before with our premium services</p>
+        </div>
+        <div class="grid grid-3">
+            <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: var(--light-color);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">✈️</div>
+                <h3>Expert Guides</h3>
+                <p>Our experienced travel experts curate personalized itineraries tailored to your preferences and interests.</p>
+            </article>
+            <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: var(--light-color);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">💰</div>
+                <h3>Best Prices</h3>
+                <p>Enjoy competitive pricing with flexible payment options and exclusive deals on premium travel packages.</p>
+            </article>
+            <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: var(--light-color);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🛡️</div>
+                <h3>Secure & Safe</h3>
+                <p>Travel with peace of mind knowing your safety and security are our top priorities on every journey.</p>
+            </article>
+            <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: var(--light-color);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🌟</div>
+                <h3>24/7 Support</h3>
+                <p>Our dedicated support team is available round-the-clock to assist you with any travel concerns.</p>
+            </article>
+            <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: var(--light-color);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📱</div>
+                <h3>Easy Booking</h3>
+                <p>Seamless booking experience with intuitive interface and instant confirmation of your reservations.</p>
+            </article>
+            <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: var(--light-color);">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">🎁</div>
+                <h3>Loyalty Rewards</h3>
+                <p>Earn points on every booking and redeem them for exclusive discounts on future travels.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card reveal-item">
+                    <div class="stat-icon">😊</div>
+                    <div class="counter-value" data-target="50000">0</div>
+                    <div class="stat-label">Happy Travelers</div>
+                </div>
+                <div class="stat-card reveal-item">
+                    <div class="stat-icon">🌏</div>
+                    <div class="counter-value" data-target="150">0</div>
+                    <div class="stat-label">Destinations</div>
+                </div>
+                <div class="stat-card reveal-item">
+                    <div class="stat-icon">📦</div>
+                    <div class="counter-value" data-target="500">0</div>
+                    <div class="stat-label">Tour Packages</div>
+                </div>
+                <div class="stat-card reveal-item">
+                    <div class="stat-icon">⭐</div>
+                    <div class="counter-value" data-target="4">4</div>
+                    <div class="stat-label" style="margin-top: -0.5rem;"><span>.</span><span>9</span>/5 Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="alt-bg">
+        <div class="container" style="text-align: center;">
+            <h2>Ready to Start Your Journey?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Browse our collection of curated destinations and packages, or get in touch with our team for personalized recommendations.
+            </p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="destinations.html" class="btn-primary">Explore Destinations</a>
+                <a href="contact.html" class="btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🌍 TravelHub</h3>
+                    <p>Your gateway to unforgettable travel experiences around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📧 info@travelhub.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Travel Street, Adventure City, AC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <p>&copy; 2026 TravelHub. All rights reserved. | <a href="#privacy" style="color: var(--accent-color);">Privacy Policy</a> | <a href="#terms" style="color: var(--accent-color);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Home page specific initialization
+        window.addEventListener('load', function() {
+            // Display featured packages on home page
+            const featuredPackagesList = packagesData.slice(0, 3);
+            const container = document.getElementById('featured-packages-grid');
+            
+            container.innerHTML = featuredPackagesList.map(pkg => `
+                <article class="package-card reveal-item">
+                    <img src="${pkg.image}" alt="${pkg.name}" class="package-image">
+                    <div class="package-overlay">
+                        <button class="btn-secondary" onclick="viewPackageDetails(${pkg.id})">View Details</button>
+                    </div>
+                    <div class="package-info">
+                        <span class="package-category">${pkg.category}</span>
+                        <h3 class="package-name">${pkg.name}</h3>
+                        <p class="package-duration">⏱️ ${pkg.duration}</p>
+                        <p class="package-description">${pkg.description}</p>
+                        <div class="package-footer">
+                            <span class="package-price">${pkg.price}</span>
+                            <button class="btn-primary" onclick="bookPackage('${pkg.name}', '${pkg.price}')">Book Now</button>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+
+            // Display popular destinations on home page
+            const popularDestinations = destinationsData.slice(0, 6);
+            const destContainer = document.getElementById('destinations-grid');
+            
+            destContainer.innerHTML = popularDestinations.map(destination => `
+                <article class="destination-card reveal-item">
+                    <img src="${destination.image}" alt="${destination.name}" class="destination-image">
+                    <div class="destination-info">
+                        <div class="destination-tag">${destination.category}</div>
+                        <h3 class="destination-name">${destination.name}</h3>
+                        <p class="destination-region">📍 ${destination.region}</p>
+                        <p class="destination-description">${destination.description}</p>
+                        <button class="btn-primary" onclick="bookDestination('${destination.name}')" style="width: 100%;">Explore Now</button>
+                    </div>
+                </article>
+            `).join('');
+
+            initScrollReveal();
+            initCounterAnimation();
+        });
+    </script>
+</body>
+</html>

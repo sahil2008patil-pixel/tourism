@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our stunning collection of travel photography from destinations around the world.">
+    <title>Gallery - TravelHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">🌍 TravelHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="alt-bg" style="padding: 3rem 1rem;">
+        <div class="container">
+            <h1>Travel Gallery</h1>
+            <p style="font-size: 1.1rem; color: var(--text-color); margin-top: 1rem;">
+                Explore breathtaking moments from travelers around the world
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTER SECTION -->
+    <section class="container" style="padding: 2rem 1rem;">
+        <div class="filter-section">
+            <div class="filter-group">
+                <label class="filter-label">Filter by Category</label>
+                <div id="category-filters" class="filter-buttons">
+                    <button class="filter-btn active" data-value="all" onclick="filterGallerByCategory('all')">All Photos</button>
+                    <button class="filter-btn" data-value="Architecture" onclick="filterGallerByCategory('Architecture')">Architecture</button>
+                    <button class="filter-btn" data-value="Beach" onclick="filterGallerByCategory('Beach')">Beach</button>
+                    <button class="filter-btn" data-value="Nature" onclick="filterGallerByCategory('Nature')">Nature</button>
+                    <button class="filter-btn" data-value="Culture" onclick="filterGallerByCategory('Culture')">Culture</button>
+                    <button class="filter-btn" data-value="History" onclick="filterGallerByCategory('History')">History</button>
+                    <button class="filter-btn" data-value="Wildlife" onclick="filterGallerByCategory('Wildlife')">Wildlife</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="container" style="padding: 0 1rem 4rem;">
+        <div id="gallery-container"></div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="alt-bg">
+        <div class="container" style="text-align: center;">
+            <h2>Share Your Travel Stories</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                Have stunning photos from your travels? We'd love to feature them in our gallery! Get in touch to share your travel moments with our community.
+            </p>
+            <a href="contact.html" class="btn-primary">Submit Your Photos</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🌍 TravelHub</h3>
+                    <p>Your gateway to unforgettable travel experiences around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📧 info@travelhub.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Travel Street, Adventure City, AC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <p>&copy; 2026 TravelHub. All rights reserved. | <a href="#privacy" style="color: var(--accent-color);">Privacy Policy</a> | <a href="#terms" style="color: var(--accent-color);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

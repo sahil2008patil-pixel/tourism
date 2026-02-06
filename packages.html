@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our world-class tour packages designed for every type of traveler.">
+    <title>Tour Packages - TravelHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">🌍 TravelHub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="packages.html">Packages</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <section class="alt-bg" style="padding: 3rem 1rem;">
+        <div class="container">
+            <h1>Tour Packages</h1>
+            <p style="font-size: 1.1rem; color: var(--text-color); margin-top: 1rem;">
+                Handpicked travel packages tailored to create your perfect vacation
+            </p>
+        </div>
+    </section>
+
+    <!-- FILTER SECTION -->
+    <section class="container" style="padding: 2rem 1rem;">
+        <div class="filter-section">
+            <div class="filter-group">
+                <label class="filter-label">Filter by Category</label>
+                <div id="category-filters" class="filter-buttons">
+                    <button class="filter-btn active" data-value="all" onclick="filterPackagesByCategory('all')">All Packages</button>
+                    <button class="filter-btn" data-value="City Tour" onclick="filterPackagesByCategory('City Tour')">City Tours</button>
+                    <button class="filter-btn" data-value="Beach & Culture" onclick="filterPackagesByCategory('Beach & Culture')">Beach & Culture</button>
+                    <button class="filter-btn" data-value="Mountain Trekking" onclick="filterPackagesByCategory('Mountain Trekking')">Mountain Trekking</button>
+                    <button class="filter-btn" data-value="Cultural Experience" onclick="filterPackagesByCategory('Cultural Experience')">Cultural</button>
+                    <button class="filter-btn" data-value="Adventure & Wildlife" onclick="filterPackagesByCategory('Adventure & Wildlife')">Adventure</button>
+                    <button class="filter-btn" data-value="Beach Holiday" onclick="filterPackagesByCategory('Beach Holiday')">Beach Holiday</button>
+                    <button class="filter-btn" data-value="Island Hopping" onclick="filterPackagesByCategory('Island Hopping')">Island Hopping</button>
+                    <button class="filter-btn" data-value="Beach & Luxury" onclick="filterPackagesByCategory('Beach & Luxury')">Luxury</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES GRID -->
+    <section class="container" style="padding: 0 1rem 4rem;">
+        <div id="packages-container"></div>
+    </section>
+
+    <!-- INFO SECTION -->
+    <section class="alt-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>What's Included in Our Packages?</h2>
+                <p>Every TravelHub package is designed with your comfort and enjoyment in mind</p>
+            </div>
+            <div class="grid grid-3">
+                <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: white; box-shadow: var(--shadow-md);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🏨</div>
+                    <h3>Premium Accommodation</h3>
+                    <p>Carefully selected hotels, resorts, and lodges offering comfort and authentic local experiences.</p>
+                </article>
+                <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: white; box-shadow: var(--shadow-md);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🚗</div>
+                    <h3>Guided Tours & Transport</h3>
+                    <p>Professional guide services and comfortable transportation to all attractions and scenic locations.</p>
+                </article>
+                <article class="reveal-item" style="padding: 2rem; border-radius: 1rem; background: white; box-shadow: var(--shadow-md);">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🍽️</div>
+                    <h3>Meals & Entertainment</h3>
+                    <p>Authentic local cuisine, fine dining experiences, and cultural entertainment throughout your journey.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="container">
+        <div style="text-align: center;">
+            <h2>Ready to Book Your Adventure?</h2>
+            <p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                Select a package that appeals to you and start planning your dream vacation today!
+            </p>
+            <a href="contact.html" class="btn-primary">Get More Information</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>🌍 TravelHub</h3>
+                    <p>Your gateway to unforgettable travel experiences around the world.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="destinations.html">Destinations</a></li>
+                        <li><a href="packages.html">Packages</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li>📧 info@travelhub.com</li>
+                        <li>📞 +1 (555) 123-4567</li>
+                        <li>📍 123 Travel Street, Adventure City, AC 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-divider">
+                <p>&copy; 2026 TravelHub. All rights reserved. | <a href="#privacy" style="color: var(--accent-color);">Privacy Policy</a> | <a href="#terms" style="color: var(--accent-color);">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
